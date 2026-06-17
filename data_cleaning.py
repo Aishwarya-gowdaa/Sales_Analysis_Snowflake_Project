@@ -13,6 +13,7 @@ df.columns = (
     .str.strip()
     .str.lower()
     .str.replace(" ", "_")
+    .str.replace("-","_")
 )
 
 # 3. REMOVE DUPLICATES
